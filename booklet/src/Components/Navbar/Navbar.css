@@ -1,5 +1,9 @@
 .Header{
-	margin-top:200px;
+ background-color: aqua;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
 	position: fixed;
 	width: 100%;
     height: 10vh;
@@ -12,32 +16,51 @@
 	padding: 0px 9%;
 	transition: ease .4s;
 }
-.searchbox{
-	display: block;
+.Header img{
+	border: 2px solid bisque;
+	transition: all .4s;
 }
-#searchbar{
-	margin-left: 15%;
-	padding:15px;
-	border-radius: 10px;
-  }
-
-  input[type=text] {
-	 width: 30%;
-	 -webkit-transition: width 0.15s ease-in-out;
-	 transition: width 0.15s ease-in-out;
-  }
-
-  /* When the input field gets focus,
-	   change its width to 100% */
-  input[type=text]:focus {
-	width: 70%;
-  }
-
- #list{
-   font-size:  1em;
-   margin-left: 90px;
-  }
-
-.books{
-  display: list-item;    
- } 
+.Header img:hover{
+	transform: scale(1.1);
+}
+.navbar{
+	
+	text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.navbar a{
+    position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 1.02rem;
+	padding: 10px 20px;
+}
+.navbar a::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: aqua;
+	left: 0;
+	bottom: 2px;
+	transition: ease .4s;
+}
+.navbar a:hover:after{
+	width: 100%;
+}
+.sticky {
+	top: -10px;
+	padding: 0px 9%;
+	background:rgb(28, 228, 228);
+	transition: ease .4s;
+}
+.sticky .navbar a{
+	color: rgba(255, 0, 0, 0.644);
+	font-weight: 750;
+}
+.sticky .navbar a::after{
+	background-color: rgba(255, 0, 0, 0.644);
+}
