@@ -13,7 +13,7 @@ function Navbar(){
 			<Link to="/">What is Booklet?</Link>
 			<Link to="/MyBook">My Book</Link>
       {/* <Link to="/Categories">Categories</Link> */}
-      <Categories/>
+      <Categories />
 			<Link to="/Contact">Contact</Link>
 
       <Search/>
@@ -26,7 +26,7 @@ export default Navbar;
 const Header = document.querySelector("header");
 
 window.addEventListener ("scroll", function() {
-    Header.classList.toggle ("sticky", window.scrollY > null);
+    Header.classList.toggle ("sticky", window.scrollY > 0);
 });
 
 
