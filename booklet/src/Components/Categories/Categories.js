@@ -4,7 +4,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 function DropdownItemTagsExample() {
   return (
-    <DropdownButton id="dropdown-item-button" title="Categories" variant="" style={{ background:'rgb(202, 214, 214)', border: 'rgb(19, 16, 194)'}}>
+    <DropdownButton id="dropdown-item-button" title="Categories" variant="" style={{ background:'rgb(202, 214, 214)'}}>
       <Dropdown.Item as="button">Children's</Dropdown.Item>
       <Dropdown.Item as="button">Literary Fiction</Dropdown.Item>
       <Dropdown.Item as="button">Science And Technology</Dropdown.Item>
