@@ -1,10 +1,10 @@
 import React from 'react'
-import "./What_is_Booklet.css"
-function What_is_Booklet(){
+import "./AboutUs.css"
+function About(){
     return(
-        <div className='desc'>
+        <div className="desc">
            <p>Booklet is free E-book side where people can read books through free access</p> 
         </div>
     )
 }
-export default What_is_Booklet;
+export default About;

@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Components/Pages/Home'
 import Navbar from './Components/Navbar/Navbar'
-import Offer from './Components/Offer/Offer'
+import AboutUs from './Components/AboutUs/AboutUs'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Offer />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
       </Routes>
     </div>
   );
