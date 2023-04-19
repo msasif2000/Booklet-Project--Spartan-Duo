@@ -1,11 +1,12 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import "./Categories.css"
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import { Link } from 'react-router-dom';
 
 function DropdownItemTagsExample() {
   return (
     <DropdownButton id="btn" title="Categories" variant="" >
-      <Dropdown.Item as="button">Children's</Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/Childrens">Childrens</Link></Dropdown.Item>
       <Dropdown.Item as="button">Literary Fiction</Dropdown.Item>
       <Dropdown.Item as="button">Science And Technology</Dropdown.Item>
       <Dropdown.Item as="button">Career and Growth</Dropdown.Item>

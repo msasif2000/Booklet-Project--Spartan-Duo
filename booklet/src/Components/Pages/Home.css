@@ -1,7 +1,0 @@
-.Main{
-    margin-top: 0vh;
-    height: 100vh;
-    background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url("../../imgs/banner6.jpg") center/cover no-repeat;
-    background-position: fixed;
-    flex-direction: column;
-}
