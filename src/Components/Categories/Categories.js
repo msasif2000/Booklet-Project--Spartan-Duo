@@ -7,15 +7,15 @@ function DropdownItemTagsExample() {
   return (
     <DropdownButton id="btn" title="Categories" variant="" >
       <Dropdown.Item as="button"><Link to="/Childrens">Childrens</Link></Dropdown.Item>
-      <Dropdown.Item as="button">Literary Fiction</Dropdown.Item>
-      <Dropdown.Item as="button">Science And Technology</Dropdown.Item>
-      <Dropdown.Item as="button">Career and Growth</Dropdown.Item>
-      <Dropdown.Item as="button">Religion and Spirituality</Dropdown.Item>
-      <Dropdown.Item as="button">Magazines</Dropdown.Item>
-      <Dropdown.Item as="button">Language Studies</Dropdown.Item>
-      <Dropdown.Item as="button">History</Dropdown.Item>
-      <Dropdown.Item as="button">Politics and Philosophy</Dropdown.Item>
-      <Dropdown.Item as="button">Travel</Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/LiteraryFiction">Literary Fiction</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/ScienceTechnology">Science And Technology</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/CareerGrowth">Career And Growth</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/ReligionSpirituality">Religion And Spirituality</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/Magazines">Magazines</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/LanguageStudies">Language Studies</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/History">History</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/PoliticsPhilosophy">Politics And Philosophy</Link></Dropdown.Item>
+      <Dropdown.Item as="button"><Link to="/Travel">Travel</Link></Dropdown.Item>
     </DropdownButton>
   );
 }
