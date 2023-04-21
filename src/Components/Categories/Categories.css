@@ -14,3 +14,8 @@
     border-color: white;
     color: white;
 }
+.ip{
+    background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url("../../imgs/banner4.jpg") center/cover no-repeat;
+    opacity: 100%;
+    padding: 10px 0%;
+}
