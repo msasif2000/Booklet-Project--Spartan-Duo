@@ -14,6 +14,8 @@ import LanguageStudies from './Components/Categories/LanguageStudies'
 import History from './Components/Categories/History'
 import PoliticsPhilosophy from './Components/Categories/PoliticsPhilosophy'
 import Travel from './Components/Categories/Travel'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
 function App() {
   return (
     <div>
@@ -33,6 +35,8 @@ function App() {
         <Route path="/History" element={<History />} />
         <Route path="/PoliticsPhilosophy" element={<PoliticsPhilosophy />} />
         <Route path="/Travel" element={<Travel />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Footer" element={<Footer />} />
         
       </Routes>
     </div>
