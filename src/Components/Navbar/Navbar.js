@@ -23,11 +23,3 @@ function Navbar(){
     );
 }
 export default Navbar;
-
-const Header = document.querySelector("header");
-
-window.addEventListener ("scroll", function() {
-    Header.classList.toggle ("sticky", window.scrollY > 0);
-}); 
-
-
