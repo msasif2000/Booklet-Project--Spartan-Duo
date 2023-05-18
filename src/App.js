@@ -37,6 +37,7 @@ function App() {
         <Route path="/Travel" element={<Travel />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Footer" element={<Footer />} />
+        <Route path="/sign_up" element={<sign_up />} />
         
       </Routes>
     </div>
