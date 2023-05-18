@@ -1,5 +1,5 @@
 import React from 'react';
-import "./signup.css"
+import "./Signup.css"
 import {
   MDBBtn,
   MDBContainer,
@@ -10,7 +10,7 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-function sign_up() {
+function Signup() {
   return (
     <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{backgroundImage: 'url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp)'}}>
       <div className='mask gradient-custom-3'></div>
@@ -31,4 +31,4 @@ function sign_up() {
   );
 }
 
-export default sign_up;
+export default Signup;

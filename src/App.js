@@ -16,6 +16,7 @@ import PoliticsPhilosophy from './Components/Categories/PoliticsPhilosophy'
 import Travel from './Components/Categories/Travel'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import Signup from './Components/Pages/Signup'
 function App() {
   return (
     <div>
@@ -37,7 +38,7 @@ function App() {
         <Route path="/Travel" element={<Travel />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Footer" element={<Footer />} />
-        <Route path="/sign_up" element={<sign_up />} />
+        <Route path="/Signup" element={<Signup />} />
         
       </Routes>
     </div>

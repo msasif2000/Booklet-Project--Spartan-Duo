@@ -17,7 +17,7 @@ function Navbar(){
       {/* <Link to="/Categories">Categories</Link> */}
       <Categories />
 			<Link to="/Contact">Contact</Link>
-      <Link to="/sign_up">Sign Up</Link>
+      <Link to="/Signup">Sign Up</Link>
       </div>
       </header>
     );
