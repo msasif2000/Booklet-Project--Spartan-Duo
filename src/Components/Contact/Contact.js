@@ -48,6 +48,7 @@ function Contact(){
                     <FaCreditCard/>
                 </div>
             </div>
+            
         </div>
     );
 }
