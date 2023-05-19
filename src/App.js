@@ -18,6 +18,7 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Signup from './Components/Pages/Signup'
 import Signin from './Components/Pages/Signin'
+import BookCard from './Components/Categories/BookCard'
 function App() {
   return (
     <div>
@@ -40,7 +41,7 @@ function App() {
         <Route path="/Footer" element={<Footer />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/bookCard" element={<bookCard />} />
+        <Route path="/BookCard" element={<BookCard />} />
       </Routes>
     </div>
   );

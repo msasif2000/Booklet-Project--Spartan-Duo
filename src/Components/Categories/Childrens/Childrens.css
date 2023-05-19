@@ -1,0 +1,31 @@
+.outer{
+    margin-top: 5vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*mb-4 text-center font-sans text-5xl font-bold text-gray-800*/
+.outer h1{
+    margin: 5px auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: silver;
+    font-weight: bold;
+}
+.outer p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    padding: 10px 5%;
+}
+.outer span{
+    color: slategray;
+    font-weight: 600;
+}
+/*"mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3*/
+.grd{
+    padding: 10px 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
