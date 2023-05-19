@@ -4,9 +4,9 @@ import Home from './Components/Pages/Home'
 import Navbar from './Components/Navbar/Navbar'
 import AboutUs from './Components/AboutUs/AboutUs'
 import FirstPage from './Components/Pages/FirstPage'
-import Childrens from './Components/Categories/Childrens'
-import LiteraryFiction from './Components/Categories/LiteraryFiction'
-import ScienceTechnology from './Components/Categories/ScienceTechnology'
+import Childrens from './Components/Categories/Childrens/Childrens'
+import LiteraryFiction from './Components/Categories/LiteraryFiction/LiteraryFiction'
+import ScienceTechnology from './Components/Categories/ScienceTechnology/ScienceTechnology'
 import CareerGrowth from './Components/Categories/CareerGrowth'
 import ReligionSpirituality from './Components/Categories/ReligionSpirituality'
 import Magazines from './Components/Categories/Magazines'
@@ -21,7 +21,6 @@ import Signin from './Components/Pages/Signin'
 function App() {
   return (
     <div>
-    
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
