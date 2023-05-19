@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
 export default function Childrens() {
   return (
-    <div>
-      
-    </div>
-  )
+    <section className="pt-5 pb-10">
+      <h1 className="mb-4 text-center font-sans text-5xl font-bold text-gray-800">
+        books<span className="text-blue-600">.</span>
+      </h1>
+    <p className="mx-auto w-9/12 mb-12  text-justify text-gray-600">Have you thought about a career in tech, but weren't sure where to begin? This book will help you find out. Computer Programming For Everyone is one of three books which introduces you to coding and design, from understanding some of the key developments in the advent of computer technology to describing the features of text-based languages. You'll explore some of the basics behind how programming works. You'll also see how people use the skills in the digital workplace. This book group is part of our portfolio of digital and professional skills books, which covers a diverse range of subjects, from coding to remote working, all available for free to help you begin building your career today.</p>
+      <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
+        <bookCard />
+        <bookCard />
+        <bookCard />
+        <bookCard />
+        <bookCard />
+      </div>
+    </section>
+  );
 }
