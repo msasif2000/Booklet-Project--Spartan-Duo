@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BookCard.css";
-export default function BookCard() {
+export default function BookCard({book}) {
   return (
     <article className="card">
       <Link to="/books/details" style={{textDecoration:'none'}}>
@@ -24,7 +24,7 @@ export default function BookCard() {
         </div>
 
         <div className="det">
-          <h2 className="ttl">abc</h2>
+          <h2 className="ttl">{book.bookname}</h2>
           <div className="prc">
             <p>
               <span className="tt">$80</span>
