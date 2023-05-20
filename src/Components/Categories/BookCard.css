@@ -34,9 +34,14 @@
     margin-left: 10px;
     font-size: small;
 }
-.det .ttl{
-    margin-left: 20px;
-    
+.det h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-left: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: between;
     color: black;
 }
 .prc .tt{

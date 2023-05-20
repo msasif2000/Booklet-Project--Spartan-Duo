@@ -16,16 +16,17 @@
     font-size: 20px;
     font-weight: 300;
     text-align: justify;
-    padding: 10px 5%;
+    padding: 10px 10%;
 }
 .outer span{
     color: slategray;
     font-weight: 600;
 }
 /*"mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3*/
-.grd{
-    padding: 10px 5%;
+.outer .grd{
+    padding: 20px 15%;
+    align-items: center;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
