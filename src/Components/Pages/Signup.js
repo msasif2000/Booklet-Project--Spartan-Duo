@@ -6,7 +6,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBCheckbox
 }
 from 'mdb-react-ui-kit';
 import Footer from '../Footer/Footer';
