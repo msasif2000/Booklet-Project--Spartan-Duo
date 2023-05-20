@@ -1,0 +1,48 @@
+.card{
+    background: white;
+    border-radius: 10px;
+    height: 350px;
+    width: 410px;
+    margin-bottom: 15px;
+    
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inside{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.inside img{
+    height: 250px;
+    width: auto;
+}
+.mid{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+}
+.txt{
+    color: yellow;
+    margin-left: 10px;
+    font-size: small;
+}
+.det .ttl{
+    margin-left: 20px;
+    
+    color: black;
+}
+.prc .tt{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: between;
+}
+
