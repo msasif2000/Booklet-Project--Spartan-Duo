@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./BookCard.css";
-export default function BookCard({book}) {
+import "./STCard.css";
+export default function STCard({book}) {
   return (
     <article className="card">
       <Link to="/books/details" style={{textDecoration:'none'}}>

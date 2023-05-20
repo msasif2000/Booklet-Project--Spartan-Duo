@@ -18,7 +18,9 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Signup from './Components/Pages/Signup'
 import Signin from './Components/Pages/Signin'
-import BookCard from './Components/Categories/BookCard'
+import ChildCard from './Components/Categories/Childrens/ChildCard'
+import LFCard from './Components/Categories/LiteraryFiction/LFCard'
+import STCard from './Components/Categories/ScienceTechnology/STCard'
 function App() {
   return (
     <div>
@@ -41,7 +43,9 @@ function App() {
         <Route path="/Footer" element={<Footer />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/BookCard" element={<BookCard />} />
+        <Route path="/ChildCard" element={<ChildCard />} />
+        <Route path="/LFCard" element={<LFCard />} />
+        <Route path="/STCard" element={<STCard />} />
       </Routes>
     </div>
   );
