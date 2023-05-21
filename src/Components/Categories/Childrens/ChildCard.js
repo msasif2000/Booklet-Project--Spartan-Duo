@@ -6,7 +6,7 @@ export default function ChildCard({book}) {
     <article className="card">
       <Link to="/books/details" style={{textDecoration:'none'}}>
         <div className="inside">
-          <img src="https://th.bing.com/th/id/R.c0b3220707a5308a969f090b94148f5c?rik=Rh5iru%2bUaUd94w&pid=ImgRaw&r=0"
+          <img src="https://th.bing.com/th/id/R.8c69c1c0186301d05ac60badd57d0f38?rik=5dkfL8K25RXf3Q&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fRcA%2fAzj%2fRcAAzjd4i.png&ehk=o7IgOo9AR7bY0YnJnmYu6TMutNrkpEkuG1Ax7lHV%2fWU%3d&risl=&pid=ImgRaw&r=0"
             alt="book" />
           <div className="mid">
             <svg
@@ -22,9 +22,7 @@ export default function ChildCard({book}) {
         <div className="det">
           <h2>{book.bookname}</h2>
           <div className="prc">
-            <p>
-              <span className="tt">{book.author_name}</span>
-            </p>
+            <p>{book.author_name}</p>
           </div>
         </div>
       </Link>

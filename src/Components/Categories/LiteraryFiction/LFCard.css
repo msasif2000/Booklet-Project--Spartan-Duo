@@ -1,8 +1,8 @@
 .card{
     background: white;
     border-radius: 10px;
-    height: 350px;
-    width: 410px;
+    height: 400px;
+    width: 300px;
     margin-bottom: 15px;
     
 }
@@ -17,8 +17,11 @@
     border-radius: 10px;
 }
 .inside img{
-    height: 250px;
-    width: auto;
+    margin: 25px 10px 8% 8%;
+    height: auto;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 .mid{
     position: absolute;
@@ -29,23 +32,21 @@
     border-radius: 10px;
     background: white;
 }
-.txt{
-    color: yellow;
-    margin-left: 10px;
-    font-size: small;
-}
 .det h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     padding-top: 10px;
-    font-size: 25px;
-    margin-left: 40px;
+    font-size: 20px;
+    margin-left: 30px;
     display: flex;
-    align-items: flex-end;
     justify-content: between;
-    color: black;
+    color: rgb(88, 104, 121);
+    font-weight: bold;
 }
-.prc .tt{
-
+.prc p{
+    margin-top: -5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: slategray;
     display: flex;
     align-items: flex-end;
     justify-content: between;
