@@ -23,15 +23,6 @@
     border: 2px solid black;
     border-radius: 10px;
 }
-.mid{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    display: inline-flex;
-    align-items: center;
-    border-radius: 10px;
-    background: white;
-}
 .det h2{
     font-family: 'Courier New', Courier, monospace;
     padding-top: 10px;
@@ -42,7 +33,7 @@
     color: rgb(88, 104, 121);
     font-weight: bold;
 }
-.prc p{
+.det p{
     margin-top: -5px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;

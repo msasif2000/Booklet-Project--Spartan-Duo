@@ -4,14 +4,24 @@
     padding-bottom: 20px;
    
   }
+  .container h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(70, 169, 187);
+    text-align: center;
+    padding-bottom: 20px;
+  }
   .grid{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 50px;
     
   }
-  
+  span{
+    color: rgb(70, 169, 187);
+    font-weight: bold;
+  }
   .item{ 
     border-radius: 20px;
     background-color: rgb(245, 245, 245);
@@ -21,9 +31,14 @@
     height: auto;
   }
   .item img{ 
-    width: 100%;
+    width: auto;
+    height: 600px;
+    border-radius: 20px;
+    border: 2px dashed silver;
   }
-  .item h3{
+  .item p{
+    font-size: 17px;
+    text-align: justify;
     padding: 5% 5%;
     color: rgb(0, 0, 0);
     width: 100%;

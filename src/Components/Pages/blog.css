@@ -1,0 +1,39 @@
+#blog {
+    padding: 30px 5%;
+    height: 90vh;
+    background-color: #000;
+    scroll-margin-top: 10vh;
+    color: bisque;
+}
+.blog-content{
+    padding-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	grid-gap: .5rem;
+	align-items: center;
+	cursor: pointer;
+}
+.box img{
+	max-width: 95%;
+	width: 300px;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	transition: all .3s;
+}
+.box p{
+	color: #cfedf2;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.box h5{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 200;
+	text-align: center;
+}
+.box img:hover{
+	transform: scale(1.1);
+}

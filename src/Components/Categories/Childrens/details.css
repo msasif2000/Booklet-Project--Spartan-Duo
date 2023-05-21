@@ -1,0 +1,10 @@
+.main{
+    height: 100vh;
+    padding: 15% 10%;
+}
+.main h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: rgb(88, 104, 121);
+    font-weight: bold;
+}

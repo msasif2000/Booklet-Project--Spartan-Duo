@@ -8,17 +8,17 @@ import Categories from '../Categories/Categories'
 function Navbar(){
     return(
       <header className="Header">
-      <Link to="/"><img src={Logo} alt="Booklet Logo" style={{ background:'bisque', borderRadius:'7px', width:'auto', height:'6vh'}}/></Link>
+      <Link to="/" style={{textDecoration:'none'}}><img src={Logo} alt="Booklet Logo" style={{ background:'bisque', borderRadius:'7px', width:'auto', height:'6vh'}}/></Link>
 
       <div className="navbar">
-      <Link to="/">Home</Link>
-			<Link to="/AboutUs">About us</Link>
+      <Link to="/" style={{textDecoration:'none'}}>Home</Link>
+			<Link to="/AboutUs" style={{textDecoration:'none'}}>About us</Link>
 		
       {/* <Link to="/Categories">Categories</Link> */}
       <Categories />
-			<Link to="/Contact">Contact</Link>
-      <Link to="/Signin">Sign In</Link>
-      <Link to="/Signup">Sign Up</Link>
+			<Link to="/Contact" style={{textDecoration:'none'}}>Contact</Link>
+      <Link to="/Signin" style={{textDecoration:'none'}}>Sign In</Link>
+      <Link to="/Signup" style={{textDecoration:'none'}}>Sign Up</Link>
       </div>
       </header>
     );
