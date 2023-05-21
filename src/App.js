@@ -22,6 +22,7 @@ import ChildCard from './Components/Categories/Childrens/ChildCard';
 import LFCard from './Components/Categories/LiteraryFiction/LFCard';
 import STCard from './Components/Categories/ScienceTechnology/STCard';
 import BlogSection from './Components/blogSection/blogSection';
+import Review from './Components/Review/Review';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/LFCard" element={<LFCard />} />
         <Route path="/STCard" element={<STCard />} />
         <Route path="/blogSection" element={<BlogSection />} />
+        <Route path="/Review" element={<Review />} />
       </Routes>
     </div>
   );

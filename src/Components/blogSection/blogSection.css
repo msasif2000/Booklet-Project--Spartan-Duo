@@ -2,9 +2,9 @@
     margin-top: 10vh;
     padding: 30px 5%;
     height: 90vh;
-    background-color: #000;
+    background-color: #ffffff;
     scroll-margin-top: 10vh;
-    color: bisque;
+    color: black;
 }
 .blog-content{
     padding-top: 30px;
@@ -23,17 +23,19 @@
 	transition: all .3s;
 }
 .box p{
-	color: #cfedf2;
+	color: #285961;
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 15px;
 	text-align: center;
+	font-weight: bold;
 }
 .box h5{
-	color: #fff;
+	color: #5c3d3d;
 	font-size: 15px;
 	font-weight: 200;
 	text-align: center;
+	font-weight: 500;
 }
 .box img:hover{
 	transform: scale(1.1);

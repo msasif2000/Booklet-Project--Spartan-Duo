@@ -2,7 +2,7 @@ import React from 'react'
 import "./blogSection.css"
 export default function blogSection() {
   return (
-    <div id="blog" class="title">
+    <div id="title" class="blog">
 		<h2 class="text-center">Blog <span>Section</span></h2>
 		<p class="text-center">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br />Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br />Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br />Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <br />Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
 	    <div class="blog-content">
@@ -25,7 +25,7 @@ export default function blogSection() {
 				</div>
 	
 				<div class="box">
-					<img src="D:\Final Project\Booklet-Project--Spartan-Duo\src\imgs\four.jpg" alt="" />
+					<img src="https://drive.google.com/file/d/1dWKPoDLFAnpo90Ty9nKnw7f5KGfr6PUu/view?usp=share_link" alt="pic" />
 					<p>24/7 Support</p>
 					<h5>Dedicated support</h5>
 				</div>
