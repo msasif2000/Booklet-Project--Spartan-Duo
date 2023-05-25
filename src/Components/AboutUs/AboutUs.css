@@ -1,42 +1,42 @@
 .container{
-    width: 80%;
+    width: 100%;
     padding-top: 80px;
     padding-bottom: 20px;
     margin-top: 5vh;
   }
-  .container h2{
+.container h2{
     font-size: 40px;
     font-weight: bold;
     color: rgb(70, 169, 187);
     text-align: center;
     padding-bottom: 20px;
-  }
-  .grid{
+}
+.cgrid{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 50px;
     
-  }
-  span{
+}
+span{
     color: rgb(70, 169, 187);
     font-weight: bold;
-  }
-  .item{ 
+}
+.item{ 
     border-radius: 20px;
     background-color: rgb(245, 245, 245);
     justify-content: center;
     display: flex;
     align-items: center;
     height: auto;
-  }
-  .item img{ 
+}
+.item img{ 
     width: auto;
     height: 600px;
     border-radius: 20px;
     border: 2px dashed silver;
-  }
-  .item p{
+}
+.item p{
     font-size: 17px;
     text-align: justify;
     padding: 5% 5%;
@@ -49,7 +49,7 @@
     .container{
       width: 100%;
     }
-    .grid{
+    .cgrid{
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: min-content;
       grid-gap: 10px;
@@ -57,7 +57,7 @@
   }
   
   @media all and (min-width:1000px){
-    .grid{
+    .cgrid{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
     }
