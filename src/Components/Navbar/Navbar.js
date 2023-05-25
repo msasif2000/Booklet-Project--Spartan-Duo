@@ -6,6 +6,11 @@ import Categories from '../Categories/Categories'
 
 
 function Navbar(){
+  const isUser = localStorage.getItem('isUser')
+  const handleSignOut = () => {
+    localStorage.removeItem('isUser')
+    window.location.href = '/'
+  }
     return(
       <header className="Header">
       <Link to="/" style={{textDecoration:'none'}}><img src={Logo} alt="Booklet Logo" style={{ background:'bisque', borderRadius:'7px', width:'auto', height:'6vh'}}/></Link>
@@ -17,8 +22,15 @@ function Navbar(){
       {/* <Link to="/Categories">Categories</Link> */}
       <Categories />
 			<Link to="/Contact" style={{textDecoration:'none'}}>Contact</Link>
-      <Link to="/Signin" style={{textDecoration:'none'}}>Sign In</Link>
-      <Link to="/Signup" style={{textDecoration:'none'}}>Sign Up</Link>
+      {
+        isUser ? <Link to="/Signin" style={{textDecoration:'none'}} onClick={handleSignOut}>Sign Out</Link> :
+        (
+          <div>
+          <Link to="/Signin" style={{textDecoration:'none'}}>Sign In</Link>
+          <Link to="/Signup" style={{textDecoration:'none'}}>Sign Up</Link>
+          </div>
+        )
+      }
       </div>
       </header>
     );

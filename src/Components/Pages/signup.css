@@ -1,23 +1,38 @@
-.gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-    }
-    .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-    }
-    .gradient-custom-4:hover{
-        background: linear-gradient(to right, rgba(132, 250, 176, 1), rgb(10, 34, 46));
-    }
+.sign{
+    margin-top: 0;
+    height: 100vh;
+    padding-top: 15vh;
+    background: linear-gradient( rgba(59, 41, 65, 0.5), rgba(54, 47, 56, 0.3)), url("../../imgs/banner6.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.grid{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-gap: 100px; 
+}
+.obj{ 
+    border-radius: 20px;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.obj h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 20px;
+}
+.obj img{ 
+    width: auto;
+    height: 600px;
+    border-radius: 20px;
+}

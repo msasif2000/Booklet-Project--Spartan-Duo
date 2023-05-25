@@ -1,52 +1,82 @@
-import React from 'react';
+import React, { useRef } from 'react'
+import { Button, Form } from 'react-bootstrap'
+import icon from "../../imgs/icon2.png"
 import "./Signup.css"
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBCard,
-  MDBInput,
-}
-from 'mdb-react-ui-kit';
-import Footer from '../Footer/Footer';
 
-function Signup() {
-  const [name, setName] = React.useState("")
-  const [email, setEmail] = React.useState("")
-  const [password, setPassword] = React.useState("")
+const Signup = () => {
+  const nameRef = useRef()
+  const emailRef = useRef()
+  const passwordRef = useRef()
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSignup = (e) => {
+    const name = nameRef.current.value
+    const email = emailRef.current.value
+    const password = passwordRef.current.value
 
-    const user = {name, email, password}
-    fetch("http://localhost:5000/signup", {
-      method: "POST",
+    const newBook = { name, email, password}
+
+    fetch('http://localhost:5000/Signup', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(user)
+      body: JSON.stringify(newBook),
     })
-    .then(r => r.json())
-    .then(user => console.log(user))
-  }
-  return (
-    <div>
-    <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{backgroundImage: 'url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp)', height:'90vh'}}>
-    <form onSubmit={handleSubmit} className='mask gradient-custom-3'>
-      <MDBCard className='mt' style={{width: '500px', marginTop: '10vh', height: '60vh'}}>
-        <MDBCard.Body className='px-5'>
-          <h2 className="text-uppercase text-center mb-5">Create an account</h2>
-          <MDBInput onChange={(e)=>setName(e.target.value)} label='Your Name' size='lg' id='form1' type='text' className='mb-4'/>
-          <MDBInput onChange={(e)=>setEmail(e.target.value)} label='Your Email' size='lg' id='form2' type='email' className='mb-4'/>
-          <MDBInput onChange={(e)=>setPassword(e.target.value)} label='Password' size='lg' id='form3' type='password' className='mb-4'/>
-          <MDBBtn type='submit' className='mb-4 w-100 gradient-custom-4' style={{height: '6vh'}}>Register</MDBBtn>
-        </MDBCard.Body>
-      </MDBCard>
-    </form>
-  </MDBContainer>
-  <Footer />
-</div>
-    
-  );
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          alert('Data is Successfully added in database')
+        }
+        else {
+          alert(data.status)
+        }
+      })
+
+    e.preventDefault()
   }
 
+  return (
+    <section className='sign'>
+        <div className="grid">
+          <div className="obj">
+          <Form style={{marginTop:"8vh", alignItems:'center'}}onSubmit={handleSignup}>
+            <h1>User Registration</h1>
+          <Form.Group className="mb-3 mt-5" controlId="formBasicEmail">
+            <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Name</Form.Label>
+            <Form.Control
+              ref={nameRef}
+              type="text"
+              required
+              placeholder="Mr X"
+              style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+            />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Email</Form.Label>
+          <Form.Control
+            ref={emailRef}
+            type="email"
+            required
+            placeholder="example@hotmail.com"
+            style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Password</Form.Label>
+          <Form.Control
+            ref={passwordRef}
+            type="password"
+            required
+            placeholder="ExaMple@123"
+            style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit">Register</Button>
+          </Form>
+          </div>
+          <div className="obj"><img className="img-fluid" src={icon} alt="about"/></div>
+        </div>
+    </section>
+  )
+}
 export default Signup;

@@ -1,34 +1,71 @@
-import React from 'react';
-import "./Signin.css"
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-}
-from 'mdb-react-ui-kit';
-import Footer from '../Footer/Footer';
+import React, { useRef } from 'react'
+import { Button, Form } from 'react-bootstrap'
+import gif from "../../imgs/icon.png"
+import "./Signup.css"
 
-function Signin() {
+const Signin = () => {
+  const emailRef = useRef()
+  const passwordRef = useRef()
+
+  const handleSignin = (e) => {
+    const email = emailRef.current.value
+    const password = passwordRef.current.value
+
+    const newBook = { email, password}
+
+    fetch('http://localhost:6000/Signin', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newBook),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.isUser === true) {
+          alert(data.status)
+          localStorage.setItem('isUser', true)
+          window.location.href = '/'
+        }
+        else {
+          alert(data.status)
+        }
+      })
+    e.preventDefault()
+  }
+
   return (
-    <div>
-    <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{backgroundImage: 'url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp)', height:'90vh'}}>
-      <div className='mask gradient-custom-3'></div>
-      <MDBCard className='mt' style={{width: '500px', marginTop: '10vh', height: '50vh'}}>
-        <MDBCardBody className='px-5'>
-          <h2 className="text-uppercase text-center mb-5">Create an account</h2>
-          <MDBInput wrapperClass='mb-4' label='Your Email' size='lg' id='form2' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' size='lg' id='form3' type='password'/>
-          <div className='d-flex flex-row justify-content-center mb-4'>
+    <section className='sign'>
+        <div className="grid">
+        <div className="obj"><img className="img-fluid" src={gif} alt="about"/></div>
+          <div className="obj">
+          <Form style={{marginTop:"8vh", alignItems:'center'}}onSubmit={handleSignin}>
+            <h1>User Login</h1>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Email</Form.Label>
+              <Form.Control
+                ref={emailRef}
+                type="email"
+                required
+                placeholder="example@hotmail.com"
+                style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Password</Form.Label>
+              <Form.Control
+                ref={passwordRef}
+                type="password"
+                required
+                placeholder="ExaMple@123"
+                style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+              />
+            </Form.Group>
+            <Button variant="primary" type="submit">Sign In</Button>
+          </Form>
           </div>
-          <MDBBtn className='mb-4 w-100 gradient-custom-4' size='' style={{height: '6vh'}}>Submit</MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBContainer>
-    <Footer />
-    </div>
-  );
+        </div>
+    </section>
+  )
 }
-
 export default Signin;

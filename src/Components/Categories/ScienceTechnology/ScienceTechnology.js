@@ -18,7 +18,7 @@ export default function ScienceTechnology() {
       <div className="grd">
       {
           books.map((book) => (
-            <STCard book={books} key={book._id}/>
+            <STCard book={book} key={book._id}/>
           ))
       }
       </div>

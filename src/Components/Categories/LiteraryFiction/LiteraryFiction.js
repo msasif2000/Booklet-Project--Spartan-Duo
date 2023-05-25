@@ -1,26 +1,33 @@
 import React from "react";
+import "./LiteraryFiction.css";
 import LFCard from "./LFCard";
-import "./LiteraryFiction.css"
-
 
 export default function LiteraryFiction() {
-  const [books, setBooks] = React.useState([])
+  const [books, setBooks] = React.useState([]);
+
   React.useEffect(() => {
-    fetch("http://localhost:5000/literaryfiction")
+    fetch("http://localhost:5000/allBooks")
       .then((r) => r.json())
       .then(setBooks);
   }, []);
 
+  const filteredBooks = books.filter((book) => book.category === "Literary Fiction");
+
   return (
     <section className="outer">
-      <h1>Literary <span>Fiction</span></h1>
-      <p>Our literary fiction section showcases a wide array of novels, short stories, and novellas written by acclaimed authors from around the world. These books delve into complex themes, emotions, and intricate character development, offering readers an immersive and introspective reading experience.</p>
+      <h1>Literary <span>Fiction</span>
+      </h1>
+      <p>
+        Welcome to the eLibrary Children's Book section! Here, we offer a wide
+        range of engaging and educational books specifically tailored for young
+        readers. Our collection features an assortment of fiction and
+        non-fiction books, designed to captivate the imaginations of children of
+        all ages.
+      </p>
       <div className="grd">
-      {
-          books.map((book) => (
-            <LFCard book={books} key={book._id}/>
-          ))
-      }
+        {filteredBooks.map((book) => (
+          <LFCard book={book} key={book._id} />
+        ))}
       </div>
     </section>
   );
