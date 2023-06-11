@@ -5,3 +5,49 @@
     background-position: fixed;
     flex-direction: column;
 }
+
+/*responsive*/
+@media screen and (max-width: 1080px){
+    .Home{
+        padding-top: 10vh;
+    }
+    .grid{
+        padding: 10vh 10%;
+    }
+    .obj h1{
+        font-size: 2rem;
+    }
+    .obj img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 670px){
+    .Home{
+        padding-top: 10vh;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .obj h1{
+        font-size: 2rem;
+    }
+    .obj img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 500px){
+    .Home{
+        padding-top: 10vh;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .obj h1{
+        font-size: 1.5rem;
+    }
+    .obj img{
+        height: 300px;
+    }
+}

@@ -118,3 +118,37 @@ form textarea{
     font-size: 24px;
     color: rgb(40, 11, 116);
 }
+/*responsive*/
+@media screen and (max-width: 1080px){
+	.contact{
+		height: auto;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.social{
+		position: relative;
+		margin-top: 3rem;
+	}
+}
+@media screen and (max-width: 480px){
+	.contact-form h2{
+		font-size: 30px;
+	}
+	.contact-form p{
+		font-size: 15px;
+	}
+	.contact-form form .send{
+		font-size: 13px;
+	}
+	.social h2{
+		font-size: 25px;
+	}
+	.social p{
+		display: flex;
+    	justify-content: between;
+		font-size: 15px;
+		display: flex;
+	}
+	.social-form a{
+		font-size: 15px;
+	}
+}

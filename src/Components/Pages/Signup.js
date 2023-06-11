@@ -43,32 +43,32 @@ const Signup = () => {
             <h1>User Registration</h1>
           <Form.Group className="mb-3 mt-5" controlId="formBasicEmail">
             <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Name</Form.Label>
-            <Form.Control
+            <Form.Control className='box'
               ref={nameRef}
               type="text"
               required
               placeholder="Mr X"
-              style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+              style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
             />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Email</Form.Label>
-          <Form.Control
+          <Form.Control className='box'
             ref={emailRef}
             type="email"
             required
             placeholder="example@hotmail.com"
-            style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+            style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Password</Form.Label>
-          <Form.Control
+          <Form.Control className='box'
             ref={passwordRef}
             type="password"
             required
             placeholder="ExaMple@123"
-            style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+            style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
           />
         </Form.Group>
         <Button variant="primary" type="submit">Register</Button>

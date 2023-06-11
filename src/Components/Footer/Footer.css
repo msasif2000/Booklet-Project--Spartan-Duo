@@ -21,3 +21,29 @@
 .copy-right a:hover{
     color: rgb(223, 205, 205);
 }
+/*responsive*/
+@media screen and (max-width: 1080px){
+    .footer{
+        position: relative;
+        padding: 20px 0;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 776px){
+    .footer{
+        padding: 20px 0;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer{
+        padding: 20px 0;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+}

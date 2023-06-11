@@ -43,22 +43,22 @@ const Signin = () => {
             <h1>User Login</h1>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Email</Form.Label>
-              <Form.Control
+              <Form.Control className='box'
                 ref={emailRef}
                 type="email"
                 required
                 placeholder="example@hotmail.com"
-                style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+                style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Password</Form.Label>
-              <Form.Control
+              <Form.Control className='box'
                 ref={passwordRef}
                 type="password"
                 required
                 placeholder="ExaMple@123"
-                style={{ fontSize:'20px', fontFamily:'TimesNewRoman', width:'500px'}}
+                style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
               />
             </Form.Group>
             <Button variant="primary" type="submit">Sign In</Button>

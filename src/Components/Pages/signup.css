@@ -32,9 +32,16 @@
     padding-bottom: 20px;
 }
 .obj img{ 
-    width: auto;
+    width: 500px;
     height: 600px;
     border-radius: 20px;
+}
+.box{
+    background-color: #fff;
+    height: 50px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media all and (min-width: 670px){
     .container{
@@ -47,9 +54,73 @@
     }
   }
   
-  @media all and (min-width:1000px){
-    .grid{
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-    }
+@media all and (min-width:1000px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
+}
+
+/*responsive*/
+@media screen and (max-width: 1080px){
+    .sign{
+        padding-top: 10vh;
+    }
+    .obj h1{
+        font-size: 2.5rem;
+    }
+    .obj img{
+        height: auto;
+        width: auto;
+    }
+    .box{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 980px){
+    .sign{
+        padding-top: 10vh;
+    }
+    .obj h1{
+        font-size: 2.5rem;
+    }
+    .obj img{
+        height: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .sign{
+        height: auto;
+        padding-top: 10vh;
+    }
+    .obj h1{
+        font-size: 2.5rem;
+    }
+    .obj img{
+        height: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width: 670px){
+    .sign{
+        padding-top: 10vh;
+    }
+    .obj h1{
+        font-size: 2.5rem;
+    }
+    .obj img{
+        height: 500px;
+    }
+}
+@media screen and (max-height: 706px){
+    .sign{
+        padding-top: 10vh;
+    }
+    .obj h1{
+        font-size: 2.5rem;
+    }
+    .obj img{
+        height: 500px;
+    }
+}
