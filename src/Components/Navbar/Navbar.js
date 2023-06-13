@@ -2,7 +2,6 @@ import Logo from "../../imgs/booklet-logo.png"
 import menu from "../../imgs/menu.png"
 import "./Navbar.css"
 import {Link} from "react-router-dom"
-
 import Categories from '../Categories/Categories'
 import { useState } from "react"
 

@@ -43,14 +43,14 @@ const Books = () => {
   }
 
   return (
-    <section classbookname='booki'>
-        <div classbookname="gridt">
-          <div classbookname="objct">
+    <section className='booki'>
+        <div className="gridt">
+          <div className="objct">
           <Form style={{marginTop:"8vh", alignItems:'center'}}onSubmit={handleBooks}>
             <h1>Add Book</h1>
-          <Form.Group classbookname="mb-3 mt-5" controlId="formBasicauthor_name">
+          <Form.Group className="mb-3 mt-5" controlId="formBasicauthor_name">
             <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman' }}>Enter Bookname</Form.Label>
-            <Form.Control classbookname='boxg'
+            <Form.Control className='boxg'
               ref={booknameRef}
               type="text"
               required
@@ -58,9 +58,9 @@ const Books = () => {
               style={{ fontSize:'20px', fontFamily:'TimesNewRoman' }}
             />
         </Form.Group>
-        <Form.Group classbookname="mb-3" controlId="formBasicauthor_name">
+        <Form.Group className="mb-3" controlId="formBasicauthor_name">
           <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman' }}>Enter  Author Name</Form.Label>
-          <Form.Control classbookname='boxg'
+          <Form.Control className='boxg'
             ref={author_nameRef}
             type="text"
             required
@@ -68,9 +68,9 @@ const Books = () => {
             style={{ fontSize:'20px', fontFamily:'TimesNewRoman' }}
           />
         </Form.Group>
-        <Form.Group classbookname="mb-3" controlId="formBasicauthor_name">
+        <Form.Group className="mb-3" controlId="formBasicauthor_name">
           <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman' }}>Book description</Form.Label>
-          <Form.Control classbookname='boxg'
+          <Form.Control className='boxg'
             ref={descriptionRef}
             type="text"
             required
@@ -81,7 +81,7 @@ const Books = () => {
         <Button variant="primary" type="submit">Enter Book</Button>
           </Form>
           </div>
-          <div classbookname="objct"><img classbookname="img-fluid" src={gif} alt="about"/></div>
+          <div className="objct"><img className="img-fluid" src={gif} alt="about"/></div>
         </div>
     </section>
   )
