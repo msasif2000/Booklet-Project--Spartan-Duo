@@ -1,4 +1,4 @@
-.sign{
+.booki{
     margin-top: 0;
     height: 100vh;
     padding-top: 15vh;
@@ -8,14 +8,14 @@
     background-attachment: fixed;
     background-position: center;
 }
-.grid{
+.gridt{
     padding: 0 10%;
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 1;
     grid-gap: 100px; 
 }
-.obj{ 
+.objct{ 
     border-radius: 20px;
     background-color: transparent;
     justify-content: center;
@@ -23,7 +23,7 @@
     align-items: center;
     height: auto;
 }
-.obj h1{
+.objct h1{
     color: #fff;
     font-size: 3rem;
     font-weight: 600;
@@ -31,12 +31,12 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-bottom: 20px;
 }
-.obj img{ 
+.objct img{ 
     width: 500px;
     height: 600px;
     border-radius: 20px;
 }
-.box{
+.boxg{
     background-color: #fff;
     height: 50px;
     width: 500px;
@@ -44,15 +44,18 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media all and (min-width: 670px){
-    .grid{
+    .container{
+      width: 100%;
+    }
+    .gridt{
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: min-content;
       grid-gap: 10px;
     }
-  }
-  
+}
+
 @media all and (min-width:1000px){
-  .grid{
+  .gridt{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
@@ -60,64 +63,64 @@
 
 /*responsive*/
 @media screen and (max-width: 1080px){
-    .sign{
+    .book{
         padding-top: 10vh;
     }
-    .obj h1{
+    .objct h1{
         font-size: 2.5rem;
     }
-    .obj img{
+    .objct img{
         height: auto;
         width: auto;
     }
-    .box{
+    .boxg{
         width: 400px;
     }
 }
 @media screen and (max-width: 980px){
-    .sign{
+    .book{
         padding-top: 10vh;
     }
-    .obj h1{
+    .objct h1{
         font-size: 2.5rem;
     }
-    .obj img{
+    .objct img{
         height: auto;
         width: auto;
     }
 }
 @media screen and (max-width: 768px){
-    .sign{
+    .book{
         height: auto;
         padding-top: 10vh;
     }
-    .obj h1{
+    .objct h1{
         font-size: 2.5rem;
     }
-    .obj img{
+    .objct img{
         height: auto;
         width: auto;
     }
 }
 @media screen and (max-width: 670px){
-    .sign{
+    .book{
         padding-top: 10vh;
     }
-    .obj h1{
+    .objct h1{
         font-size: 2.5rem;
     }
-    .obj img{
+    .objct img{
         height: 500px;
     }
 }
 @media screen and (max-height: 706px){
-    .sign{
+    .book{
         padding-top: 10vh;
     }
-    .obj h1{
+    .objct h1{
         font-size: 2.5rem;
     }
-    .obj img{
+    .objct img{
         height: 500px;
     }
 }

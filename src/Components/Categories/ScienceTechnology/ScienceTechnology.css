@@ -22,7 +22,6 @@
     color: slategray;
     font-weight: 600;
 }
-/*"mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3*/
 .outer .grd{
     padding: 20px 15%;
     align-items: center;

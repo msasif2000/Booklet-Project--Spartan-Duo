@@ -24,6 +24,7 @@ import BlogSection from './Components/blogSection/blogSection';
 import Review from './Components/Review/Review';
 import Signup from './Components/Pages/Signup';
 import Details from './Components/BookDetails/details';
+import Books from './Components/Books/Books';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <Route path="/Review" element={<Review />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/details/:id" element={<Details />} />
+        <Route path="/addBooks" element={<Books />} />
       </Routes>
     </div>
   );

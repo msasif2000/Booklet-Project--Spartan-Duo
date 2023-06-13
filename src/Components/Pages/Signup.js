@@ -13,14 +13,14 @@ const Signup = () => {
     const email = emailRef.current.value
     const password = passwordRef.current.value
 
-    const newBook = { name, email, password}
+    const newUser = { name, email, password}
 
     fetch('http://localhost:5000/Signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(newBook),
+      body: JSON.stringify(newUser),
     })
       .then((res) => res.json())
       .then((data) => {
@@ -42,33 +42,33 @@ const Signup = () => {
           <Form style={{marginTop:"8vh", alignItems:'center'}}onSubmit={handleSignup}>
             <h1>User Registration</h1>
           <Form.Group className="mb-3 mt-5" controlId="formBasicEmail">
-            <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Name</Form.Label>
+            <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman' }}>Enter Your Name</Form.Label>
             <Form.Control className='box'
               ref={nameRef}
               type="text"
               required
               placeholder="Mr X"
-              style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
+              style={{ fontSize:'20px', fontFamily:'TimesNewRoman' }}
             />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Email</Form.Label>
+          <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman' }}>Enter Your Email</Form.Label>
           <Form.Control className='box'
             ref={emailRef}
             type="email"
             required
             placeholder="example@hotmail.com"
-            style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
+            style={{ fontSize:'20px', fontFamily:'TimesNewRoman' }}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman'}}>Enter Your Password</Form.Label>
+          <Form.Label style={{ color:'bisque', fontSize:'20px', fontFamily:'TimesNewRoman' }}>Enter Your Password</Form.Label>
           <Form.Control className='box'
             ref={passwordRef}
             type="password"
             required
             placeholder="ExaMple@123"
-            style={{ fontSize:'20px', fontFamily:'TimesNewRoman'}}
+            style={{ fontSize:'20px', fontFamily:'TimesNewRoman' }}
           />
         </Form.Group>
         <Button variant="primary" type="submit">Register</Button>
