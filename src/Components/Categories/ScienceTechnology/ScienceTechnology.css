@@ -1,7 +1,6 @@
 .outer{
     margin-top: 5vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 /*mb-4 text-center font-sans text-5xl font-bold text-gray-800*/
 .outer h1{
@@ -23,9 +22,42 @@
     font-weight: 600;
 }
 .outer .grd{
-    padding: 20px 15%;
+    padding: 20px 10%;
     align-items: center;
     margin: 0 auto;
+    gap: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/*responsive*/
+@media screen and (max-width: 1670px){
+    .outer .grd{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 15%;
+    }
+}
+@media screen and (max-width: 1320px){
+    .outer .grd{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 20%;
+    }
+}
+@media screen and (max-width: 900px){
+    .outer .grd{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 30%;
+    }
+}
+@media screen and (max-width: 720px){
+    .outer .grd{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 25%;
+    }
+}
+@media screen and (max-width: 510px){
+    .outer .grd{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 20%;
+    }
 }

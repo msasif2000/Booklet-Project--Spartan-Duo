@@ -9,6 +9,8 @@
 /*responsive*/
 @media screen and (max-width: 1080px){
     .Home{
+        width: auto;
+        height: 100vh;
         padding-top: 10vh;
     }
     .grid{

@@ -6,7 +6,7 @@ export default function Childrens() {
   const [books, setBooks] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("http://localhost:5000/allBooks")
+    fetch("http://localhost:5000/allbook")
       .then((r) => r.json())
       .then(setBooks);
   }, []);

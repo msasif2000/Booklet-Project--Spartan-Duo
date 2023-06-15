@@ -1,12 +1,13 @@
 .booki{
     margin-top: 0;
-    height: 100vh;
-    padding-top: 15vh;
+    height: auto;
+    padding-top: 5vh;
     background: linear-gradient( rgba(59, 41, 65, 0.5), rgba(54, 47, 56, 0.3)), url("../../imgs/banner6.jpg") center/cover no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    padding-bottom: 5vh;
 }
 .gridt{
     padding: 0 10%;
@@ -39,14 +40,11 @@
 .boxg{
     background-color: #fff;
     height: 50px;
-    width: 500px;
+    width: 550px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media all and (min-width: 670px){
-    .container{
-      width: 100%;
-    }
     .gridt{
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: min-content;

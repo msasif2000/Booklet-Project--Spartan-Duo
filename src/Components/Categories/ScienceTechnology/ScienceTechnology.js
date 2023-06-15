@@ -5,7 +5,7 @@ import STCard from "./STCard";
 export default function ScienceTechnology() {
   const [books, setBooks] = React.useState([])
   React.useEffect(() => {
-    fetch("http://localhost:5000/allBooks")
+    fetch("http://localhost:5000/allbook")
       .then((r) => r.json())
       .then(setBooks);
   }, []);

@@ -4,7 +4,7 @@ import "./LFCard.css";
 export default function LFCard({book}) {
   return (
     <article className="card">
-      <Link to="/books/details" style={{textDecoration:'none'}}>
+    <Link to={`/details/${book._id}`} style={{textDecoration:'none'}}>
         <div className="inside">
           <img src={book.img} alt={book.bookname} />
         </div>

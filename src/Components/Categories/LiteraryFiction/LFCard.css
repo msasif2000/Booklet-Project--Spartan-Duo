@@ -18,7 +18,7 @@
 }
 .inside img{
     margin: 25px 10px 8% 8%;
-    height: auto;
+    height: 200px;
     width: 250px;
     border: 2px solid black;
     border-radius: 10px;

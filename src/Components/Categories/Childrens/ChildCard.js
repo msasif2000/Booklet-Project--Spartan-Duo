@@ -4,7 +4,7 @@ import "./ChildCard.css";
 export default function ChildCard({book}) {
   return (
     <article className="card">
-      <Link to={`../details/${book._id}`} style={{textDecoration:'none'}}>
+      <Link to={`/details/${book._id}`} style={{textDecoration:'none'}}>
         <div className="inside">
           <img src={book.img} alt={book.bookname} />
         </div>

@@ -18,3 +18,41 @@ span{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
 }
+
+/*responsive*/
+@media screen and (max-width: 1024px){
+    .main{
+        height: 100%;
+        width: auto;
+    }
+    .main h2{
+        font-size: 3.5rem;
+    }
+    .main p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    .main{
+        height: 100%;
+        width: auto;
+    }
+    .main h2{
+        font-size: 3rem;
+    }
+    .main p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px){
+    .main{
+        height: 100%;
+        width: auto;
+    }
+    .main h2{
+        font-size: 2.5rem;
+    }
+    .main p{
+        font-size: 14px;
+    }
+}
