@@ -1,5 +1,5 @@
 .Header{
- 	background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5));
+ 	background: #36cbe5;
     background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -57,6 +57,19 @@
 }
 .navbar a:hover:after{
 	width: 100%;
+}
+.sticky {
+	top: -10px;
+	padding: 0px 9%;
+	background:#46a9bb;
+	transition: ease .4s;
+}
+.sticky .navbar a{
+	color: white;
+	font-weight: 750;
+}
+.sticky .navbar a::after{
+	background-color: white;
 }
 
 /*responsive*/
