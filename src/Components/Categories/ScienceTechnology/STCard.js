@@ -4,7 +4,7 @@ import "./STCard.css";
 export default function STCard({book}) {
   return (
     <article className="card">
-    <Link to={`/details/${book._id}`} style={{textDecoration:'none'}}>
+    <Link to={`${book.url}`} style={{textDecoration:'none'}}>
         <div className="inside">
           <img src={book.img} alt={book.bookname} />
         </div>
